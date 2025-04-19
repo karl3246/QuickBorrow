@@ -1,0 +1,633 @@
+[
+  {
+    "id": 1,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "genre": "fiction",
+    "available": true
+  },
+  {
+    "id": 2,
+    "title": "1984",
+    "author": "George Orwell",
+    "genre": "science fiction",
+    "available": true
+  },
+  {
+    "id": 3,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "fiction",
+    "available": true
+  },
+  {
+    "id": 4,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "genre": "fiction",
+    "available": true
+  },
+  {
+    "id": 5,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "genre": "fiction",
+    "available": true
+  },
+  {
+    "id": 6,
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "genre": "fiction",
+    "available": true
+  },
+  {
+    "id": 7,
+    "title": "Beloved",
+    "author": "Toni Morrison",
+    "genre": "fiction",
+    "available": true
+  },
+  {
+    "id": 8,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "genre": "fiction",
+    "available": true
+  },
+  {
+    "id": 9,
+    "title": "Little Fires Everywhere",
+    "author": "Celeste Ng",
+    "genre": "fiction",
+    "available": true
+  },
+  {
+    "id": 10,
+    "title": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "genre": "fiction",
+    "available": true
+  },
+
+  {
+    "id": 11,
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "genre": "non-fiction",
+    "available": true
+  },
+  {
+    "id": 12,
+    "title": "Educated",
+    "author": "Tara Westover",
+    "genre": "non-fiction",
+    "available": true
+  },
+  {
+    "id": 13,
+    "title": "Becoming",
+    "author": "Michelle Obama",
+    "genre": "non-fiction",
+    "available": true
+  },
+  {
+    "id": 14,
+    "title": "The Immortal Life of Henrietta Lacks",
+    "author": "Rebecca Skloot",
+    "genre": "non-fiction",
+    "available": true
+  },
+  {
+    "id": 15,
+    "title": "Outliers",
+    "author": "Malcolm Gladwell",
+    "genre": "non-fiction",
+    "available": true
+  },
+  {
+    "id": 16,
+    "title": "Quiet",
+    "author": "Susan Cain",
+    "genre": "non-fiction",
+    "available": true
+  },
+  {
+    "id": 17,
+    "title": "The Body Keeps the Score",
+    "author": "Bessel van der Kolk",
+    "genre": "non-fiction",
+    "available": true
+  },
+  {
+    "id": 18,
+    "title": "The Wright Brothers",
+    "author": "David McCullough",
+    "genre": "non-fiction",
+    "available": true
+  },
+  {
+    "id": 19,
+    "title": "Born a Crime",
+    "author": "Trevor Noah",
+    "genre": "non-fiction",
+    "available": true
+  },
+  {
+    "id": 20,
+    "title": "Into the Wild",
+    "author": "Jon Krakauer",
+    "genre": "non-fiction",
+    "available": true
+  },
+
+  {
+    "id": 21,
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "genre": "science fiction",
+    "available": true
+  },
+  {
+    "id": 22,
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "genre": "science fiction",
+    "available": true
+  },
+  {
+    "id": 23,
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "genre": "science fiction",
+    "available": true
+  },
+  {
+    "id": 24,
+    "title": "The Martian",
+    "author": "Andy Weir",
+    "genre": "science fiction",
+    "available": true
+  },
+  {
+    "id": 25,
+    "title": "Ender’s Game",
+    "author": "Orson Scott Card",
+    "genre": "science fiction",
+    "available": true
+  },
+  {
+    "id": 26,
+    "title": "Snow Crash",
+    "author": "Neal Stephenson",
+    "genre": "science fiction",
+    "available": true
+  },
+  {
+    "id": 27,
+    "title": "Ready Player One",
+    "author": "Ernest Cline",
+    "genre": "science fiction",
+    "available": true
+  },
+  {
+    "id": 28,
+    "title": "Neuromancer",
+    "author": "William Gibson",
+    "genre": "science fiction",
+    "available": true
+  },
+  {
+    "id": 29,
+    "title": "The Left Hand of Darkness",
+    "author": "Ursula K. Le Guin",
+    "genre": "science fiction",
+    "available": true
+  },
+  {
+    "id": 30,
+    "title": "Foundation",
+    "author": "Isaac Asimov",
+    "genre": "science fiction",
+    "available": true
+  },
+
+  {
+    "id": 31,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "genre": "fantasy",
+    "available": true
+  },
+  {
+    "id": 32,
+    "title": "Harry Potter and the Sorcerer’s Stone",
+    "author": "J.K. Rowling",
+    "genre": "fantasy",
+    "available": true
+  },
+  {
+    "id": 33,
+    "title": "A Game of Thrones",
+    "author": "George R.R. Martin",
+    "genre": "fantasy",
+    "available": true
+  },
+  {
+    "id": 34,
+    "title": "The Name of the Wind",
+    "author": "Patrick Rothfuss",
+    "genre": "fantasy",
+    "available": true
+  },
+  {
+    "id": 35,
+    "title": "Mistborn: The Final Empire",
+    "author": "Brandon Sanderson",
+    "genre": "fantasy",
+    "available": true
+  },
+  {
+    "id": 36,
+    "title": "Eragon",
+    "author": "Christopher Paolini",
+    "genre": "fantasy",
+    "available": true
+  },
+  {
+    "id": 37,
+    "title": "The Way of Kings",
+    "author": "Brandon Sanderson",
+    "genre": "fantasy",
+    "available": true
+  },
+  {
+    "id": 38,
+    "title": "The Lies of Locke Lamora",
+    "author": "Scott Lynch",
+    "genre": "fantasy",
+    "available": true
+  },
+  {
+    "id": 39,
+    "title": "The Chronicles of Narnia",
+    "author": "C.S. Lewis",
+    "genre": "fantasy",
+    "available": true
+  },
+
+  {
+    "id": 40,
+    "title": "Gone Girl",
+    "author": "Gillian Flynn",
+    "genre": "mystery",
+    "available": true
+  },
+  {
+    "id": 41,
+    "title": "The Girl with the Dragon Tattoo",
+    "author": "Stieg Larsson",
+    "genre": "mystery",
+    "available": true
+  },
+  {
+    "id": 42,
+    "title": "Big Little Lies",
+    "author": "Liane Moriarty",
+    "genre": "mystery",
+    "available": true
+  },
+  {
+    "id": 43,
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "genre": "mystery",
+    "available": true
+  },
+  {
+    "id": 44,
+    "title": "The Woman in White",
+    "author": "Wilkie Collins",
+    "genre": "mystery",
+    "available": true
+  },
+  {
+    "id": 45,
+    "title": "In the Woods",
+    "author": "Tana French",
+    "genre": "mystery",
+    "available": true
+  },
+  {
+    "id": 46,
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "genre": "mystery",
+    "available": true
+  },
+  {
+    "id": 47,
+    "title": "Sharp Objects",
+    "author": "Gillian Flynn",
+    "genre": "mystery",
+    "available": true
+  },
+  {
+    "id": 48,
+    "title": "The Reversal",
+    "author": "Michael Connelly",
+    "genre": "mystery",
+    "available": true
+  },
+  {
+    "id": 49,
+    "title": "Still Life",
+    "author": "Louise Penny",
+    "genre": "mystery",
+    "available": true
+  },
+
+  {
+    "id": 50,
+    "title": "The Notebook",
+    "author": "Nicholas Sparks",
+    "genre": "romance",
+    "available": true
+  },
+  {
+    "id": 51,
+    "title": "Me Before You",
+    "author": "Jojo Moyes",
+    "genre": "romance",
+    "available": true
+  },
+  {
+    "id": 52,
+    "title": "The Time Traveler’s Wife",
+    "author": "Audrey Niffenegger",
+    "genre": "romance",
+    "available": true
+  },
+  {
+    "id": 53,
+    "title": "Outlander",
+    "author": "Diana Gabaldon",
+    "genre": "romance",
+    "available": true
+  },
+  {
+    "id": 54,
+    "title": "The Rosie Project",
+    "author": "Graeme Simsion",
+    "genre": "romance",
+    "available": true
+  },
+  {
+    "id": 55,
+    "title": "Beautiful Disaster",
+    "author": "Jamie McGuire",
+    "genre": "romance",
+    "available": true
+  },
+  {
+    "id": 56,
+    "title": "The Hating Game",
+    "author": "Sally Thorne",
+    "genre": "romance",
+    "available": true
+  },
+  {
+    "id": 57,
+    "title": "Beach Read",
+    "author": "Emily Henry",
+    "genre": "romance",
+    "available": true
+  },
+  {
+    "id": 58,
+    "title": "It Ends With Us",
+    "author": "Colleen Hoover",
+    "genre": "romance",
+    "available": true
+  },
+  {
+    "id": 59,
+    "title": "Red, White & Royal Blue",
+    "author": "Casey McQuiston",
+    "genre": "romance",
+    "available": true
+  },
+
+  {
+    "id": 60,
+    "title": "Steve Jobs",
+    "author": "Walter Isaacson",
+    "genre": "biography",
+    "available": true
+  },
+  {
+    "id": 61,
+    "title": "Alexander Hamilton",
+    "author": "Ron Chernow",
+    "genre": "biography",
+    "available": true
+  },
+  {
+    "id": 62,
+    "title": "Long Walk to Freedom",
+    "author": "Nelson Mandela",
+    "genre": "biography",
+    "available": true
+  },
+  {
+    "id": 63,
+    "title": "The Diary of a Young Girl",
+    "author": "Anne Frank",
+    "genre": "biography",
+    "available": true
+  },
+  {
+    "id": 64,
+    "title": "Einstein: His Life and Universe",
+    "author": "Walter Isaacson",
+    "genre": "biography",
+    "available": true
+  },
+  {
+    "id": 65,
+    "title": "Leonardo da Vinci",
+    "author": "Walter Isaacson",
+    "genre": "biography",
+    "available": true
+  },
+  {
+    "id": 66,
+    "title": "Catherine the Great",
+    "author": "Robert K. Massie",
+    "genre": "biography",
+    "available": true
+  },
+  {
+    "id": 67,
+    "title": "When Breath Becomes Air",
+    "author": "Paul Kalanithi",
+    "genre": "biography",
+    "available": true
+  },
+  {
+    "id": 68,
+    "title": "Open",
+    "author": "Andre Agassi",
+    "genre": "biography",
+    "available": true
+  },
+  {
+    "id": 69,
+    "title": "Bossypants",
+    "author": "Tina Fey",
+    "genre": "biography",
+    "available": true
+  },
+
+  {
+    "id": 70,
+    "title": "A People's History of the United States",
+    "author": "Howard Zinn",
+    "genre": "history",
+    "available": true
+  },
+  {
+    "id": 71,
+    "title": "Guns, Germs, and Steel",
+    "author": "Jared Diamond",
+    "genre": "history",
+    "available": true
+  },
+  {
+    "id": 72,
+    "title": "The History of the Ancient World",
+    "author": "Susan Wise Bauer",
+    "genre": "history",
+    "available": true
+  },
+  {
+    "id": 73,
+    "title": "The Silk Roads",
+    "author": "Peter Frankopan",
+    "genre": "history",
+    "available": true
+  },
+  {
+    "id": 74,
+    "title": "A Short History of Nearly Everything",
+    "author": "Bill Bryson",
+    "genre": "history",
+    "available": true
+  },
+  {
+    "id": 75,
+    "title": "Postwar",
+    "author": "Tony Judt",
+    "genre": "history",
+    "available": true
+  },
+  {
+    "id": 76,
+    "title": "The Rise and Fall of the Third Reich",
+    "author": "William L. Shirer",
+    "genre": "history",
+    "available": true
+  },
+  {
+    "id": 77,
+    "title": "The Wright Brothers",
+    "author": "David McCullough",
+    "genre": "history",
+    "available": true
+  },
+  {
+    "id": 78,
+    "title": "Team of Rivals",
+    "author": "Doris Kearns Goodwin",
+    "genre": "history",
+    "available": true
+  },
+  {
+    "id": 79,
+    "title": "1776",
+    "author": "David McCullough",
+    "genre": "history",
+    "available": true
+  },
+
+  {
+    "id": 80,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "genre": "self-help",
+    "available": true
+  },
+  {
+    "id": 81,
+    "title": "The Power of Now",
+    "author": "Eckhart Tolle",
+    "genre": "self-help",
+    "available": true
+  },
+  {
+    "id": 82,
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "genre": "self-help",
+    "available": true
+  },
+  {
+    "id": 83,
+    "title": "You Are a Badass",
+    "author": "Jen Sincero",
+    "genre": "self-help",
+    "available": true
+  },
+  {
+    "id": 84,
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "genre": "self-help",
+    "available": true
+  },
+  {
+    "id": 85,
+    "title": "How to Win Friends and Influence People",
+    "author": "Dale Carnegie",
+    "genre": "self-help",
+    "available": true
+  },
+  {
+    "id": 86,
+    "title": "The 7 Habits of Highly Effective People",
+    "author": "Stephen R. Covey",
+    "genre": "self-help",
+    "available": true
+  },
+  {
+    "id": 87,
+    "title": "Can’t Hurt Me",
+    "author": "David Goggins",
+    "genre": "self-help",
+    "available": true
+  },
+  {
+    "id": 88,
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "genre": "self-help",
+    "available": true
+  },
+  {
+    "id": 89,
+    "title": "Grit",
+    "author": "Angela Duckworth",
+    "genre": "self-help",
+    "available": true
+  }
+]

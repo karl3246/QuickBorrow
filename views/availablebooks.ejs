@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Available Books</title>
+  <link rel="stylesheet" href="stylesheets/nav.css" />
+  <link rel="stylesheet" href="stylesheets/availablebooks.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="/welcome">Home</a>
+      <a href="/availablebooks">Available Books</a>
+      <a href="/mybooks">My Books</a>
+    </div>
+  </nav>
+
+  <div class="books-container">
+    <h1>Available Books</h1>
+
+    <div class="importantnotice">
+      <h2>Important Notice: The books listed below are available for borrowing. Each user is allowed to borrow a maximum of 2 books at a time, and each book can only be borrowed for up to 2 days to give others the chance to use them as well. If a book is not showing in the list or you see a message like "No books found," it means that the book has either been borrowed by someone else or is currently unavailable in our collection.</h2>
+    </div>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search books..." />
+    </div>
+    
+    <div class="library-content">
+      <div class="genre-sidebar">
+        <h3>Genres</h3>
+        <ul class="genre-list">
+          <li><a href="#" class="genre-link" data-genre="all">All Genres</a></li>
+          <li><a href="#" class="genre-link" data-genre="fiction">Fiction</a></li>
+          <li><a href="#" class="genre-link" data-genre="non-fiction">Non-Fiction</a></li>
+          <li><a href="#" class="genre-link" data-genre="science fiction">Science Fiction</a></li>
+          <li><a href="#" class="genre-link" data-genre="fantasy">Fantasy</a></li>
+          <li><a href="#" class="genre-link" data-genre="mystery">Mystery</a></li>
+          <li><a href="#" class="genre-link" data-genre="romance">Romance</a></li>
+          <li><a href="#" class="genre-link" data-genre="biography">Biography</a></li>
+          <li><a href="#" class="genre-link" data-genre="history">History</a></li>
+          <li><a href="#" class="genre-link" data-genre="self-help">Self-Help</a></li>
+        </ul>
+      </div>
+      
+      <div class="books-grid" id="booksGrid">
+        <% 
+          // Filter out duplicate books based on title and author
+          let uniqueBooks = books.filter((book, index, self) =>
+            index === self.findIndex((b) => (
+              b.title === book.title && b.author === book.author
+            ))
+          );
+          
+          uniqueBooks.forEach(function(book) { 
+        %>
+          <div class="book-card">
+            <h3><%= book.title %></h3>
+            <p><%= book.author %></p>
+            <p><%= book.genre %></p>
+            <form action="/availablebooks/borrow" method="POST">
+              <input type="hidden" name="bookId" value="<%= book._id %>">
+              <button type="submit">Borrow</button>
+            </form>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="javascripts/availablebooks.js"></script>
+  <script src="javascripts/theme-handler.js"></script>
+</body>
+</html>

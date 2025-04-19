@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="stylesheets/signup.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div id="toast"></div>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images/cmu-favicon.ico" alt="Logo" class="logo-img" />
+      <span class="logo">QuickBorrow: City of Malabon University Library Service</span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="form-container" id="signup-form">
+      <h2>Sign Up</h2>
+
+      <% if (error) { %>
+        <div class="error-message"><%= error %></div>
+      <% } %>
+
+      <form id="signup" action="/signup" method="POST">
+        <div class="name-fields">
+          <input type="text" id="first-name" name="firstName" placeholder="First Name" required />
+          <input type="text" id="last-name" name="lastName" placeholder="Last Name" required />
+          <input type="text" id="middle-initial" name="middleInitial" placeholder="M.I." maxlength="1" required />
+        </div>
+        <input type="email" id="signup-email" name="email" placeholder="Email" required 
+               title="9-digit student ID followed by @cityofmalabonuniversity.edu.ph"/>
+        <div class="password-container">
+          <input type="password" placeholder="Password" required id="signup-password" name="password" />
+          <button type="button" class="toggle-password" data-target="signup-password">
+            <i class="far fa-eye"></i>
+          </button>
+        </div>
+        <div class="password-strength">
+          <div class="strength-meter">
+            <div class="strength-bar"></div>
+          </div>
+          <span class="strength-text">Password Strength: <span id="strength-value">None</span></span>
+          <p class="password-requirements">For strong password: Include uppercase letters and use 12+ characters</p>
+        </div>
+        <input type="date" placeholder="Birthday" required name="birthday" max="2030-12-31" />
+        <button type="submit">Sign Up</button>
+      </form>
+      <p class="toggle-form">Already have an account? <a href="/">Login</a></p>
+    </div>
+  </div>
+  <script src="javascripts/signup.js"></script>
+</body>
+</html>

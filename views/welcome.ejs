@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="stylesheets/welcome.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="welcome">Home</a>
+        <a href="availablebooks">Available Books</a>
+        <a href="mybooks">My Books</a>
+      </div>
+      <div class="nav-right">
+        <div class="my-account-dropdown">
+          <button class="account-btn">
+            <img
+              src="images/profile-default-icon-512x511-v4sw4m29.png"
+              alt="User Icon"
+              class="account-icon"
+            />
+            My Account
+          </button>
+          <div class="dropdown-content">
+            <p class="dropdown-header"><strong>My Account</strong></p>
+            <div class="dropdown-item">
+              <span class="dropdown-label">Name:</span>
+              <span id="username-display"></span>
+            </div>
+            <div class="dropdown-item">
+              <span class="dropdown-label">Email:</span>
+              <span id="email-display"></span>
+            </div>
+            <hr />
+            <a href="#" id="profile-settings-link" class="dropdown-link"
+              >Profile Settings</a
+            >
+            <a href="#" id="appearance-settings-link" class="dropdown-link"
+              >Appearance</a
+            >
+            <a href="mybooks" class="dropdown-link">My Books</a>
+            <a href="#" id="support-link" class="dropdown-link">Support</a>
+            <hr />
+            <a href="#" id="logout-link" class="dropdown-link">Logout</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-image-container">
+      <img
+        src="images/118311949_1682413728582292_7142342566694936444_n.jpg"
+        alt="Library Image"
+        class="header-image"
+      />
+    </div>
+
+    <div class="boxes-container">
+      <div class="box">
+        <div class="box-front">
+          <h3>For Students</h3>
+          <p>
+            Access a wide range of textbooks, research materials, and online
+            resources to support your studies.
+          </p>
+        </div>
+        <div class="box-back">
+          <img src="images/students.jpg" alt="Students" />
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-front">
+          <h3>For Faculty</h3>
+          <p>
+            Request teaching materials, recommend new acquisitions, and manage
+            course reserves to enhance your classes.
+          </p>
+        </div>
+        <div class="box-back">
+          <img src="images/faculty.jpg" alt="Faculty" />
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-front">
+          <h3>For Staff</h3>
+          <p>
+            Manage library operations, assist patrons, and oversee inventory
+            efficiently using management tools.
+          </p>
+        </div>
+        <div class="box-back">
+          <img src="images/staff.jpg" alt="Staff" />
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-front">
+          <h3>News</h3>
+          <p>
+            Stay updated with the latest announcements, new arrivals, events,
+            and service updates.
+          </p>
+        </div>
+        <div class="box-back">
+          <img src="images/news.jpg" alt="News" />
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-front">
+          <h3>Schedule</h3>
+          <p>
+            <strong>Library Schedule:</strong><br />
+            8am - 11am<br />
+            12pm - 1pm Lunch Break<br />
+            2pm - 5pm
+          </p>
+        </div>
+        <div class="box-back">
+          <img src="images/city_of_malabon_university2.jpg" alt="Schedule" />
+        </div>
+      </div>
+    </div>
+
+    <div id="profile-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">×</span>
+        <h2>Profile Settings</h2>
+        <form id="profile-form">
+          <label for="username-input">Username:</label>
+          <input type="text" id="username-input" />
+          <label for="email-input">Email:</label>
+          <input type="email" id="email-input" disabled />
+          <button type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="support-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn-support">×</span>
+        <h2>Support</h2>
+        <p>If you need assistance, please contact the library staff.</p>
+        <textarea
+          id="support-message"
+          placeholder="Type your message here..."
+          rows="5"
+        ></textarea>
+        <button id="send-support-btn">Send</button>
+        <p
+          id="support-confirmation"
+          class="support-confirmation"
+          style="display: none"
+        >
+          Your message has been sent.
+        </p>
+      </div>
+    </div>
+
+    <div id="appearance-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn-appearance">×</span>
+        <h2>Appearance Settings</h2>
+        <div class="theme-options">
+          <div class="theme-option" data-theme="light">
+            <div class="theme-preview light-theme"></div>
+            <span>White Theme</span>
+          </div>
+          <div class="theme-option" data-theme="dark">
+            <div class="theme-preview dark-theme"></div>
+            <span>Dark Theme</span>
+          </div>
+          <div class="theme-option" data-theme="ash">
+            <div class="theme-preview ash-theme"></div>
+            <span>Ash Theme</span>
+          </div>
+          <div class="theme-option" data-theme="onyx">
+            <div class="theme-preview onyx-theme"></div>
+            <span>Onyx Theme</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascripts/welcome.js"></script>
+    <script src="javascripts/theme-handler.js"></script>
+  </body>
+</html>

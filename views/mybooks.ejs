@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Books</title>
+  <link rel="stylesheet" href="stylesheets/nav.css">
+  <link rel="stylesheet" href="stylesheets/mybooks.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="welcome">Home</a>
+      <a href="availablebooks">Available Books</a>
+      <a href="mybooks">My Books</a>
+    </div>
+  </nav>
+
+  <div class="books-container">
+    <h1>My Borrowed Books</h1>
+    <div class="book-list">
+      <% if (borrowedBooks.length === 0) { %>
+        <div class="empty-message">
+          <p>You haven't borrowed any books yet.</p>
+          <p>Visit the <a href="availablebooks">Available Books</a> page to borrow some!</p>
+        </div>
+      <% } else { %>
+          <% borrowedBooks.forEach(book => { %>
+          <div class="book-card">
+            <h3 class="book-title"><%= book.title %></h3>
+            <p class="book-author">Author: <%= book.author %></p>
+            <p class="book-date">Borrowed on: <%= book.borrowDate ? book.borrowDate.toDateString() : 'N/A' %></p>
+            <form action="/mybooks/return" method="POST">
+              <input type="hidden" name="bookId" value="<%= book._id %>">
+              <button type="submit">Return Book</button>
+            </form>
+          </div>
+          <% }); %>
+      <% } %>
+    </div>
+  </div>
+
+  <script src="javascripts/mybooks.js"></script>
+  <script src="javascripts/theme-handler.js"></script>
+</body>
+</html>

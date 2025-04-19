@@ -1,0 +1,133 @@
+nav {
+    background: #007bff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-left, .nav-right {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-left a, .nav-right a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-left a:hover, .nav-right a:hover {
+    background-color: #0056b3;
+  }
+  
+  .nav-right {
+    margin-left: auto; 
+    justify-content: flex-end;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .nav-left, .nav-right {
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+    }
+  
+    .nav-left a, .nav-right a {
+      padding: 0.8rem;
+      text-align: left;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+  
+  body {
+    margin-top: 80px; 
+    font-family: Arial, sans-serif; 
+  }
+  
+  .books-container {
+    padding: 2rem;
+    max-width: 100%; 
+    margin: 2rem auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .book-card {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .book-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .book-author {
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .book-date {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .return-btn {
+    padding: 0.5rem 1rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  .return-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .empty-message {
+    text-align: center;
+    color: #666;
+    grid-column: 1 / -1;
+    padding: 2rem;
+  }
+  

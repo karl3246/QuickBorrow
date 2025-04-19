@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div id="toast"></div>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images/cmu-favicon.ico" alt="Logo" class="logo-img" />
+      <span class="logo">QuickBorrow: City of Malabon University Library Service</span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="form-container" id="login-form">
+      <h2>Login</h2>
+      <form id="login" action="/login" method="POST">
+        <input type="email" id="login-email" name="email" placeholder="Email" required 
+               title="9-digit student ID followed by @cityofmalabonuniversity.edu.ph"/>
+        <div class="password-container">
+          <input type="password" placeholder="Password" required id="login-password" name="password" />
+          <button type="button" class="toggle-password" data-target="login-password">
+            <i class="far fa-eye"></i>
+          </button>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+
+      <div class="forgot-password">
+        <a href="/forgotpassword">Forgot Password?</a>
+      </div>
+
+      <p class="toggle-form">Don't have an account? <a href="/signup">Sign up</a></p>
+    </div>
+  </div>
+
+  <script src="javascripts/script.js"></script>
+</body>
+</html>
